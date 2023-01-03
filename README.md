@@ -38,8 +38,8 @@
 
 ### Key Features <a name="key-features"></a>
 
-- **[Implement classes and object in Ruby]**
-- **[Implement encapsulation and inheritance with Ruby]**
+- **Implement classes and object in Ruby**
+- **Implement encapsulation and inheritance with Ruby**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
