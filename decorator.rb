@@ -1,5 +1,5 @@
 require './nameable'
-# class Decorator
+# class Decorator, which will be the parent of any modification to name.
 class Decorator < Nameable
   def initialize(nameable)
     super()
