@@ -1,5 +1,6 @@
+require './nameable'
 # definition of Person class
-class Person
+class Person > Nameable
   attr_reader :id
   attr_accessor :name, :age
 
@@ -16,6 +17,10 @@ class Person
     else
       false
     end
+  end
+
+  def correct_name
+    @name
   end
 
   private
