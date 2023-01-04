@@ -40,6 +40,7 @@
 
 - **Implement classes and object in Ruby**
 - **Implement encapsulation and inheritance with Ruby**
+- **Implement use of "Decorator" design pattern**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -79,7 +80,6 @@ This repository includes a the different classes that you can use to create new 
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **use the "Decorator" design pattern**
 - [ ] **Add bacis UI**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
