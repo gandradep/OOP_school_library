@@ -41,6 +41,7 @@
 - **Implement classes and object in Ruby**
 - **Implement encapsulation and inheritance with Ruby**
 - **Implement use of "Decorator" design pattern**
+- **Implement relationships based on [UML class diagram](https://github.com/microverseinc/curriculum-ruby/blob/main/oop/images/uml_class_diagram.png)**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
