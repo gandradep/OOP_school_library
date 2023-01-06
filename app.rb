@@ -1,11 +1,13 @@
 require './book'
 require './teacher'
 require './student'
+require './rental'
 
 class App
   def initialize
     @list_books = []
     @list_people = []
+    @list_rentals = []
   end
 
   def list_books
@@ -64,5 +66,43 @@ class App
     puts 'Book created successfully'
     book = Book.new(input_title, input_author)
     @list_books.push(book)
+  end
+
+  def create_rental
+    if @list_books.empty? || @list_people.empty?
+      puts 'Can\'t create rental, first create people and create a book'
+    else
+      puts 'Select a book from the following list by number'
+      @list_books.each_with_index do |n, index|
+        puts "#{index}) Title: \"#{n.title}\", Author: #{n.author}"
+      end
+      index_book = gets.chomp.to_i
+      puts 'Select a person from the following list by number (not id)'
+      @list_people.each_with_index do |n, index|
+        puts "#{index}) [#{n.class}] Name: #{n.name}, ID: #{n.id}, Age: #{n.age}"
+      end
+      index_person = gets.chomp.to_i
+      print 'Date: '
+      input_date = gets.chomp
+      rental = Rental.new(input_date, @list_people[index_person], @list_books[index_book])
+      @list_rentals.push(rental)
+    end
+  end
+
+  def list_rental_by_id
+    if @list_rentals.empty?
+      puts 'Please add a book.'
+    else
+      print 'ID of person: '
+      id = gets.chomp.to_i
+      puts 'Rentals: '
+      @list_rentals.each do |n|
+        if n.person.id == id
+          puts "Date: #{n.date}, Book: \"#{n.book.title}\" by #{n.book.author} "
+        else
+          puts 'No rentals matched that id'
+        end
+      end
+    end
   end
 end
