@@ -7,8 +7,12 @@ class App
   end
 
   def list_books
-    @list_books.each do |n|
-      puts "Title: \"#{n.title}\", Author: #{n.author}"
+    if @list_books.empty?
+      puts 'Please add a book.'
+    else
+      @list_books.each do |n|
+        puts "Title: \"#{n.title}\", Author: #{n.author}"
+      end
     end
   end
 
