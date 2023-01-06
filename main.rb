@@ -8,6 +8,8 @@ class Main
 
     Please choose an option by entering a number:
     1 - List all books
+    2 - List all people
+    3 - Create a person
     4 - Create a book
     7 - Exit
     TEXT
@@ -18,6 +20,7 @@ class Main
     user_input = gets.chomp.to_i
     menu_option = {
       1 => 'list_books',
+      2 => 'list_people',
       3 => 'create_person',
       4 => 'create_book'
     }
