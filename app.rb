@@ -40,8 +40,6 @@ class App
       print 'Name: '
       input_name = gets.chomp
       if user_input == 1
-        # print 'Classroom: '
-        # classroom = gets.chomp
         print 'Has parent permission?[Y/N]: '
         input_permission = gets.chomp
         student = Student.new(input_age, input_name, parent_permission: input_permission)
