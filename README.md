@@ -42,6 +42,7 @@
 - **Implement encapsulation and inheritance with Ruby**
 - **Implement use of "Decorator" design pattern**
 - **Implement relationships based on [UML class diagram](https://github.com/microverseinc/curriculum-ruby/blob/main/oop/images/uml_class_diagram.png)**
+- **Implement basic UI for a book rental system**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -62,6 +63,8 @@ Clone this repository to your desired folder.
 ### Usage
 
 This repository includes a the different classes that you can use to create new objects.
+<br>
+You can also run the main.rb file to interact with the book rental system.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -81,7 +84,8 @@ This repository includes a the different classes that you can use to create new 
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **Add bacis UI**
+- [ ] **Refactor the code**
+- [ ] **Unit tests**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
