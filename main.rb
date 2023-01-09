@@ -2,10 +2,9 @@ require './app'
 # this class runs the user interface
 class Main
   def initialize
-    @app = App.new
+    @select_method = SelectMethod.new
     puts 'Welcome to School Library App!'
     @menu = <<~TEXT
-
       Please choose an option by entering a number:
       1 - List all books
       2 - List all people
@@ -20,7 +19,19 @@ class Main
   def main
     puts @menu
     user_input = gets.chomp.to_i
-    menu_option = {
+    if user_input == 7
+      puts 'Thank you for using this app!'
+    else
+      @select_method.assign_method(user_input)
+      main
+    end
+  end
+end
+
+class SelectMethod
+  def initialize
+    @app = App.new
+    @menu_option = {
       1 => 'list_books',
       2 => 'list_people',
       3 => 'create_person',
@@ -28,12 +39,12 @@ class Main
       5 => 'create_rental',
       6 => 'list_rental_by_id'
     }
-    case user_input
+  end
+
+  def assign_method(input)
+    case input
     when 1..6
-      @app.send(menu_option[user_input])
-      main
-    when 7
-      puts 'Thank you for using this app!'
+      @app.send(@menu_option[input])
     end
   end
 end
