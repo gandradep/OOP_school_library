@@ -78,6 +78,18 @@ You can also run the main.rb file to interact with the book rental system.
 - Twitter: [@leribagandrade](https://twitter.com/leribagandrade)
 - LinkedIn: [Gabriel-Andrade](https://www.linkedin.com/in/gabriel-andrade-silla-turca/)
 
+👤 **Ezema Anthony Sunday**
+
+- GitHub: [@sonyco-4u](https://github.com/sonyco-4u)
+- Twitter: [@EZEMASUN](https://twitter.com/EZEMASUN)
+- LinkedIn: [ezema-anthony-sunday](https://www.linkedin.com/in/sunday-athony-ezema/)
+
+👤 **Ndorrh Oswald Ebu**
+
+- GitHub: [@sonyco-4u](https://github.com/ndorrh)
+- Twitter: [@EZEMASUN](https://twitter.com/NdorrhEbu)
+- LinkedIn: [ezema-anthony-sunday](https://linkedin.com/in/ndorrhoswaldebu)
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- FUTURE FEATURES -->
