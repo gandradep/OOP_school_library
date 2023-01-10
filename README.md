@@ -43,6 +43,7 @@
 - **Implement use of "Decorator" design pattern**
 - **Implement relationships based on [UML class diagram](https://github.com/microverseinc/curriculum-ruby/blob/main/oop/images/uml_class_diagram.png)**
 - **Implement basic UI for a book rental system**
+- **Implement code refactoring**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -78,13 +79,24 @@ You can also run the main.rb file to interact with the book rental system.
 - Twitter: [@leribagandrade](https://twitter.com/leribagandrade)
 - LinkedIn: [Gabriel-Andrade](https://www.linkedin.com/in/gabriel-andrade-silla-turca/)
 
+👤 **Ezema Anthony Sunday**
+
+- GitHub: [@sonyco-4u](https://github.com/sonyco-4u)
+- Twitter: [@EZEMASUN](https://twitter.com/EZEMASUN)
+- LinkedIn: [ezema-anthony-sunday](https://www.linkedin.com/in/sunday-athony-ezema/)
+
+👤 **Ndorrh Oswald Ebu**
+
+- GitHub: [@sonyco-4u](https://github.com/ndorrh)
+- Twitter: [@EZEMASUN](https://twitter.com/NdorrhEbu)
+- LinkedIn: [ezema-anthony-sunday](https://linkedin.com/in/ndorrhoswaldebu)
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- FUTURE FEATURES -->
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **Refactor the code**
 - [ ] **Unit tests**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
