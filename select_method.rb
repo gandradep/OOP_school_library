@@ -14,6 +14,19 @@ class SelectMethod
     }
   end
 
+  def read_file(file)
+    if File.exist?(file)
+      data_from_file = File.read(file)
+      JSON.parse(data_from_file)
+    else
+      '404'
+    end
+  end
+
+  def load_json
+    @app.list_books = read_file('books.json') == '404'? []: read_file('books.json')
+  end
+
   def save_json
     File.write('books.json', JSON.pretty_generate(@app.list_books))
   end

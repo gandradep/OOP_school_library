@@ -4,6 +4,7 @@ class Main
   def initialize
     @select_method = SelectMethod.new
     puts 'Welcome to School Library App!'
+    @select_method.load_json
     @menu = <<~TEXT
       Please choose an option by entering a number:
       1 - List all books

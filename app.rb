@@ -17,7 +17,7 @@ class App
       puts 'Please add a book.'
     else
       @list_books.each do |book|
-        puts "Title: \"#{book[:title]}\", Author: #{book[:author]}"
+        puts "Title: \"#{book["title"]}\", Author: #{book["author"]}"
       end
     end
   end
@@ -65,7 +65,7 @@ class App
     input_author = gets.chomp
     puts 'Book created successfully'
     book = Book.new(input_title, input_author)
-    @list_books.push({ title: book.title, author: book.author })
+    @list_books.push({ "title"=> book.title, "author"=> book.author })
   end
 
   def create_rental
