@@ -27,7 +27,7 @@ class App
       puts 'Please add a person.'
     else
       @list_people.each do |n|
-        puts "[#{n.class}] Name: #{n.name}, ID: #{n.id}, Age: #{n.age}"
+        puts "[#{n['class']}] Name: #{n['name']}, ID: #{n['id']}, Age: #{n['age']}"
       end
     end
   end
@@ -45,12 +45,28 @@ class App
         print 'Has parent permission?[Y/N]: '
         input_permission = gets.chomp
         student = Student.new(input_age, input_name, parent_permission: input_permission)
-        @list_people.push(student)
+        @list_people.push(
+          {
+            'id' => student.id,
+            'age' => student.age,
+            'name' => student.name,
+            'class' => student.class,
+            'parent_permission' => student.parent_permission
+          }
+        )
       else
         print 'Specialization: '
         input_specialization = gets.chomp
         teacher = Teacher.new(input_specialization, input_age, input_name)
-        @list_people.push(teacher)
+        @list_people.push(
+          {
+            'id' => teacher.id,
+            'age' => teacher.age,
+            'name' => teacher.name,
+            'class' => teacher.class,
+            'specialization' => teacher.specialization
+          }
+        )
       end
       puts 'Person created successfully.'
     else
