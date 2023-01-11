@@ -1,0 +1,16 @@
+[
+  {
+    "id": 791,
+    "age": 34,
+    "name": "John",
+    "class": "Student",
+    "parent_permission": "y"
+  },
+  {
+    "id": 114,
+    "age": 23,
+    "name": "Carl",
+    "class": "Teacher",
+    "specialization": "Mech"
+  }
+]
