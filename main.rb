@@ -20,6 +20,7 @@ class Main
     puts @menu
     user_input = gets.chomp.to_i
     if user_input == 7
+      @select_method.save_json
       puts 'Thank you for using this app!'
     else
       @select_method.assign_method(user_input)

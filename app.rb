@@ -4,23 +4,25 @@ require './student'
 require './rental'
 
 class App
+  attr_accessor :list_books, :list_people, :list_rentals
   def initialize
+    # should read from file
     @list_books = []
     @list_people = []
     @list_rentals = []
   end
 
-  def list_books
+  def show_books
     if @list_books.empty?
       puts 'Please add a book.'
     else
-      @list_books.each do |n|
-        puts "Title: \"#{n.title}\", Author: #{n.author}"
+      @list_books.each do |book|
+        puts "Title: \"#{book[:title]}\", Author: #{book[:author]}"
       end
     end
   end
 
-  def list_people
+  def show_people
     if @list_people.empty?
       puts 'Please add a person.'
     else
@@ -63,7 +65,7 @@ class App
     input_author = gets.chomp
     puts 'Book created successfully'
     book = Book.new(input_title, input_author)
-    @list_books.push(book)
+    @list_books.push({ title: book.title, author: book.author })
   end
 
   def create_rental
