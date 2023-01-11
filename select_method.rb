@@ -1,16 +1,38 @@
 require_relative './app'
+require 'json'
 
 class SelectMethod
   def initialize
     @app = App.new
     @menu_option = {
-      1 => 'list_books',
-      2 => 'list_people',
+      1 => 'show_books',
+      2 => 'show_people',
       3 => 'create_person',
       4 => 'create_book',
       5 => 'create_rental',
       6 => 'list_rental_by_id'
     }
+  end
+
+  def read_file(file)
+    if File.exist?(file)
+      data_from_file = File.read(file)
+      JSON.parse(data_from_file)
+    else
+      '404'
+    end
+  end
+
+  def load_json
+    @app.list_books = read_file('books.json') == '404' ? [] : read_file('books.json')
+    @app.list_people = read_file('people.json') == '404' ? [] : read_file('people.json')
+    @app.list_rentals = read_file('rental.json') == '404' ? [] : read_file('rental.json')
+  end
+
+  def save_json
+    File.write('books.json', JSON.pretty_generate(@app.list_books))
+    File.write('people.json', JSON.pretty_generate(@app.list_people))
+    File.write('rental.json', JSON.pretty_generate(@app.list_rentals))
   end
 
   def assign_method(input)

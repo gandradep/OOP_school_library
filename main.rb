@@ -4,6 +4,7 @@ class Main
   def initialize
     @select_method = SelectMethod.new
     puts 'Welcome to School Library App!'
+    @select_method.load_json
     @menu = <<~TEXT
       Please choose an option by entering a number:
       1 - List all books
@@ -20,6 +21,7 @@ class Main
     puts @menu
     user_input = gets.chomp.to_i
     if user_input == 7
+      @select_method.save_json
       puts 'Thank you for using this app!'
     else
       @select_method.assign_method(user_input)
