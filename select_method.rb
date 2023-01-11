@@ -24,7 +24,7 @@ class SelectMethod
   end
 
   def load_json
-    @app.list_books = read_file('books.json') == '404'? []: read_file('books.json')
+    @app.list_books = read_file('books.json') == '404' ? [] : read_file('books.json')
   end
 
   def save_json
