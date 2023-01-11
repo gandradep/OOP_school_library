@@ -1,16 +1,14 @@
 [
   {
-    "id": 791,
-    "age": 34,
-    "name": "John",
+    "id": 121,
+    "age": 18,
+    "name": "Bob",
     "class": "Student",
-    "parent_permission": "y"
-  },
-  {
-    "id": 114,
-    "age": 23,
-    "name": "Carl",
-    "class": "Teacher",
-    "specialization": "Mech"
+    "parent_permission": "n",
+    "rentals": [
+      "#<Rental:0x000001a03d6d4ed8>",
+      "#<Rental:0x0000027f27e03c58>",
+      "#<Rental:0x0000027f27e03708>"
+    ]
   }
 ]

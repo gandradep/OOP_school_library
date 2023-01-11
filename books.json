@@ -1,10 +1,30 @@
 [
   {
     "title": "lord",
-    "author": "Tolkien"
+    "author": "tolkien",
+    "rentals": [
+      "#<Rental:0x000001a03d6d4ed8>"
+    ]
   },
   {
-    "title": "Hobbit",
-    "author": "Tolkien"
+    "title": "Intern",
+    "author": "GAGG",
+    "rentals": [
+      "#<Rental:0x0000027f27e03c58>"
+    ]
+  },
+  {
+    "title": "Lord 3",
+    "author": "Tolkine",
+    "rentals": [
+
+    ]
+  },
+  {
+    "title": "Todos",
+    "author": "Jose",
+    "rentals": [
+      "#<Rental:0x0000027f27e03708>"
+    ]
   }
 ]

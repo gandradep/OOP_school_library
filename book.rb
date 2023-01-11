@@ -1,7 +1,7 @@
 # Book many-to-many relationship with Person
 class Book
-  attr_reader :rentals, :books
-  attr_accessor :title, :author
+  attr_reader :books
+  attr_accessor :rentals, :title, :author
 
   def initialize(title, author)
     @title = title

@@ -52,7 +52,8 @@ class App
             'age' => student.age,
             'name' => student.name,
             'class' => student.class,
-            'parent_permission' => student.parent_permission
+            'parent_permission' => student.parent_permission,
+            'rentals' => student.rentals
           }
         )
       else
@@ -65,7 +66,8 @@ class App
             'age' => teacher.age,
             'name' => teacher.name,
             'class' => teacher.class,
-            'specialization' => teacher.specialization
+            'specialization' => teacher.specialization,
+            'rentals' => teacher.rentals
           }
         )
       end
@@ -82,7 +84,13 @@ class App
     input_author = gets.chomp
     puts 'Book created successfully'
     book = Book.new(input_title, input_author)
-    @list_books.push({ 'title' => book.title, 'author' => book.author })
+    @list_books.push(
+      {
+        'title' => book.title,
+        'author' => book.author,
+        'rentals' => book.rentals
+      }
+    )
   end
 
   def create_rental
@@ -91,18 +99,24 @@ class App
     else
       puts 'Select a book from the following list by number'
       @list_books.each_with_index do |n, index|
-        puts "#{index}) Title: \"#{n.title}\", Author: #{n.author}"
+        puts "#{index}) Title: \"#{n['title']}\", Author: #{n['author']}"
       end
       index_book = gets.chomp.to_i
       puts 'Select a person from the following list by number (not id)'
       @list_people.each_with_index do |n, index|
-        puts "#{index}) [#{n.class}] Name: #{n.name}, ID: #{n.id}, Age: #{n.age}"
+        puts "#{index}) [#{n['class']}] Name: #{n['name']}, ID: #{n['id']}, Age: #{n['age']}"
       end
       index_person = gets.chomp.to_i
       print 'Date: '
       input_date = gets.chomp
       rental = Rental.new(input_date, @list_people[index_person], @list_books[index_book])
-      @list_rentals.push(rental)
+      @list_rentals.push(
+        {
+          'date' => rental.date,
+          'person' => rental.person,
+          'book' => rental.book
+        }
+      )
     end
   end
 
@@ -114,8 +128,8 @@ class App
       id = gets.chomp.to_i
       puts 'Rentals: '
       @list_rentals.each do |n|
-        if n.person.id == id
-          puts "Date: #{n.date}, Book: \"#{n.book.title}\" by #{n.book.author} "
+        if n['person']['id'] == id
+          puts "Date: #{n['date']}, Book: \"#{n['book']['title']}\" by #{n['book']['author']} "
         else
           puts 'No rentals matched that id'
         end
