@@ -3,7 +3,7 @@ require_relative '../person'
 describe Person do
   context 'Test Person class and its methods' do
     before(:each) do
-    @person = Person.new(25, 'gustavo')
+      @person = Person.new(25, 'gustavo')
     end
     it 'should be an instance of Person' do
       expect(@person).to be_an_instance_of Person
