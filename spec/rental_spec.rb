@@ -1,7 +1,7 @@
 require_relative '../rental'
 
 describe Rental do
-  context 'Test Rentals class and its methods' do
+  context 'Test Rental class and its methods' do
     before(:each) do
       person = teacher = {
       "class" => 'Teacher',
