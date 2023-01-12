@@ -45,6 +45,7 @@
 - **Implement basic UI for a book rental system**
 - **Implement code refactoring**
 - **Implement data storing systems in files**
+- **Implement unit test**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -97,8 +98,6 @@ You can also run the main.rb file to interact with the book rental system.
 <!-- FUTURE FEATURES -->
 
 ## 🔭 Future Features <a name="future-features"></a>
-
-- [ ] **Unit tests**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
