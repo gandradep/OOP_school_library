@@ -44,6 +44,7 @@
 - **Implement relationships based on [UML class diagram](https://github.com/microverseinc/curriculum-ruby/blob/main/oop/images/uml_class_diagram.png)**
 - **Implement basic UI for a book rental system**
 - **Implement code refactoring**
+- **Implement unit test**
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -97,8 +98,6 @@ You can also run the main.rb file to interact with the book rental system.
 <!-- FUTURE FEATURES -->
 
 ## 🔭 Future Features <a name="future-features"></a>
-
-- [ ] **Unit tests**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
