@@ -44,6 +44,7 @@
 - **Implement relationships based on [UML class diagram](https://github.com/microverseinc/curriculum-ruby/blob/main/oop/images/uml_class_diagram.png)**
 - **Implement basic UI for a book rental system**
 - **Implement code refactoring**
+- **Implement data storing systems in files**
 - **Implement unit test**
 
 
